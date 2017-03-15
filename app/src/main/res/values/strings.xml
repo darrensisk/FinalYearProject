@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FantasyFootballDraft</string>
+
+
+    <!--Login/Register-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="passwordConfirm">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="mainName">Fantasy Draft</string>
+    <string name="newAccount">Create New Account</string>
+    <string name="name">Name</string>
+    <string name="email">Email Address</string>
+    <string name="regForm">Registeration Form</string>
+
+
+</resources>

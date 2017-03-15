@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ie.darren_sisk.fantasyfootballdraft.HomeActivity"
+    android:background="#bcf9bc">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="My Team"
+        android:textSize="26dp"
+        android:fontFamily="casual"
+        android:id="@+id/myTeamButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/home_buttons" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="My Leagues"
+        android:textSize="26dp"
+        android:fontFamily="casual"
+        android:id="@+id/myLeagueButton"
+        android:layout_below="@+id/myTeamButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/home_buttons"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="Newsfeed"
+        android:textSize="26dp"
+        android:fontFamily="casual"
+        android:id="@+id/newsButton"
+        android:layout_below="@+id/myLeagueButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/home_buttons"
+        />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/home_layout_border_left"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:id="@+id/relativeLayout2"
+        android:background="@drawable/home_layout_border_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="name"
+            android:fontFamily="casual"
+            android:id="@+id/name"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/relativeLayout2"
+        android:layout_toEndOf="@+id/relativeLayout2"
+        android:background="@drawable/home_layout_border_right"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:background="@drawable/home_layout_border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Total Points:"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/totalPoints"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="#030303" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

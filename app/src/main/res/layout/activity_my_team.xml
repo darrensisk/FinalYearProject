@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/teamscreenpitch"
+    tools:context="ie.darren_sisk.fantasyfootballdraft.MyTeamActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textview"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <!-- Left Striker -->
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/leftStrikerButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getLeftStriker"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp" />
+
+
+
+
+
+    <!-- Right Striker -->
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/rightStrikerButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getRightStriker"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp" />
+
+
+
+
+
+
+
+
+    <!-- Left Mid-->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/leftMidButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getLeftMid"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="140dp" />
+
+
+
+    <!-- Right Mid -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/rightMidButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getRightMid"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="140dp" />
+
+
+
+
+
+    <!-- First Centre Mid -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/centreMidOneButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getCentreMidOne"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="340dp" />
+
+
+
+
+
+    <!-- Second Centre Mid -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/centreMidTwoButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getCentreMidTwo"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="340dp" />
+
+
+
+
+
+    <!-- Right Back -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/rightBackButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getRightBack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="280dp" />
+
+
+
+
+    <!-- Left Back-->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/leftBackButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getLeftBack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="280dp" />
+
+
+
+
+
+    <!-- First Centre Back -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/centreBackOneButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getCentreBackOne"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="295dp" />
+
+
+
+
+    <!-- Second Centre Back -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/centreBackTwoButton"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getCentreBackTwo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="195dp"
+        android:layout_marginBottom="295dp" />
+
+
+
+
+    <!-- Goalkeeper -->
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/goalkeeper"
+        android:src="@drawable/emptyshirt2"
+        android:background="@null"
+        android:onClick="getGoalkeeper"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginBottom="360dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gkSurname"
+        android:layout_above="@+id/centreBackTwoButton"
+        android:layout_alignRight="@+id/goalkeeper"
+        android:layout_alignEnd="@+id/goalkeeper" />
+
+
+</RelativeLayout>

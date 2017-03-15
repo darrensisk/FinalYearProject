@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/pitch"
+    tools:context="ie.darren_sisk.fantasyfootballdraft.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/regName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/name"
+        android:background="@drawable/login_and_register_fields_border"
+        android:textColor="#000000"
+        android:textColorHint="#FFCFCBCB"
+        android:layout_marginTop="120dp"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/regEmail"
+        android:hint="@string/email"
+        android:layout_below="@+id/regName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/regName"
+        android:layout_alignEnd="@+id/regName"
+        android:background="@drawable/login_and_register_fields_border"
+        android:textColor="#000000"
+        android:textColorHint="#FFCFCBCB"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/regUsername"
+        android:hint="@string/username"
+        android:layout_below="@+id/regEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/regName"
+        android:layout_alignEnd="@+id/regName"
+        android:background="@drawable/login_and_register_fields_border"
+        android:textColor="#000000"
+        android:textColorHint="#FFCFCBCB"
+        android:layout_marginTop="30dp"
+        android:autoText="true"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/regPassword"
+        android:hint="@string/password"
+        android:layout_below="@+id/regUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/regUsername"
+        android:layout_alignEnd="@+id/regUsername"
+        android:background="@drawable/login_and_register_fields_border"
+        android:textColor="#000000"
+        android:textColorHint="#FFCFCBCB"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/regConfimPassword"
+        android:layout_below="@+id/regPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/regPassword"
+        android:layout_alignEnd="@+id/regPassword"
+        android:hint="@string/passwordConfirm"
+        android:background="@drawable/login_and_register_fields_border"
+        android:textColor="#000000"
+        android:textColorHint="#FFCFCBCB"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/bnRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/regConfimPassword"
+        android:layout_alignEnd="@+id/regConfimPassword"
+        android:background="@drawable/home_buttons"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/regForm"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textSize="32dp"
+        android:fontFamily="@android:string/defaultMsisdnAlphaTag"
+        android:textColor="#030303" />
+
+</RelativeLayout>
