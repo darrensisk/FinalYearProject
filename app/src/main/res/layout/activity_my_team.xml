@@ -182,6 +182,20 @@
 
 
     <!-- Goalkeeper -->
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/goalkeeper2nd"
+        android:src="@drawable/blackshirt"
+        android:background="@null"
+        android:onClick="showGkDetails"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginBottom="360dp"
+        />
+
     <ImageButton
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -197,9 +211,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gkSurname"
-        android:layout_above="@+id/centreBackTwoButton"
-        android:layout_alignRight="@+id/goalkeeper"
-        android:layout_alignEnd="@+id/goalkeeper" />
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="140dp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

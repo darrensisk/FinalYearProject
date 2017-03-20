@@ -56,7 +56,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/relativeLayout"
-        android:background="@drawable/home_layout_border_left"></RelativeLayout>
+        android:background="@drawable/home_layout_border_left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="userId"
+            android:id="@+id/userId"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#040404" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="150dp"
