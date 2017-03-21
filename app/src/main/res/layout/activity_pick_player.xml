@@ -16,15 +16,26 @@
         android:id="@+id/listview"
 
 
-        />
+        android:layout_marginTop="60dp" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player Details"
-        android:id="@+id/playerDetails"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/uid"
+        android:layout_below="@+id/listview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pos_id"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="getPlayerDetails"/>
+        android:layout_alignRight="@+id/listview"
+        android:layout_alignEnd="@+id/listview" />
 
 </RelativeLayout>

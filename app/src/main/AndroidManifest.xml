@@ -26,7 +26,8 @@
         <activity android:name=".playerStats" />
         <activity android:name=".PlayerGrowth" />
         <activity android:name=".PlayerAttributes" />
-        <activity android:name=".CreateTeam"></activity>
+        <activity android:name=".CreateTeam" />
+        <activity android:name=".MyLeagueTable"></activity>
     </application>
 
 </manifest>
