@@ -7,6 +7,121 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/blankscreen"
+
     tools:context="ie.darren_sisk.fantasyfootballdraft.MyLeagueTable">
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listview"
+        android:layout_marginTop="180dp"
+        android:background="#858282"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="39dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="130dp"
+        android:background="#1429af"
+        android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="#"
+            android:id="@+id/tx_rank"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/relativeLayout3"
+        android:layout_toRightOf="@+id/relativeLayout3"
+        android:layout_toEndOf="@+id/relativeLayout3"
+        android:background="#1429af"
+        android:id="@+id/relativeLayout4"
+        android:layout_marginLeft="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Team Name"
+            android:id="@+id/tx_teamname"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/relativeLayout4"
+        android:background="#1429af"
+        android:layout_toRightOf="@+id/relativeLayout4"
+        android:layout_marginLeft="1dp"
+        android:id="@+id/relativeLayout5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="WP"
+            android:id="@+id/tx_weeklyPoints"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="109dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/relativeLayout5"
+        android:layout_toRightOf="@+id/relativeLayout5"
+        android:layout_toEndOf="@+id/relativeLayout5"
+        android:layout_marginLeft="1dp"
+        android:background="#1429af"
+        android:id="@+id/relativeLayout9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="TOTALP"
+            android:id="@+id/tx_totalPoints"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Leagues"
+        android:id="@+id/tx_leaguename"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/uid"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/relativeLayout9"
+        android:layout_alignEnd="@+id/relativeLayout9" />
 
 </RelativeLayout>
